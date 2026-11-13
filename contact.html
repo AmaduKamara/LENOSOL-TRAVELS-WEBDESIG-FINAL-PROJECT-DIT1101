@@ -1,0 +1,144 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact Us | Lenosol Travel</title>
+    <link rel="stylesheet" href="css/contact.css" />
+  </head>
+  <body>
+    <!-- Sticky Navbar -->
+    <header class="navbar">
+      <div class="container nav-container">
+        <a href="index.html" class="logo">Lenosol <span>Travels</span></a>
+        <nav>
+          <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="tours.html">Tours</a></li>
+            <li><a href="stays.html">Stays</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+            <li><a href="contact.html" class="active">Contact</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <!-- Section 1: Header -->
+    <section class="contact-header">
+      <div class="container">
+        <h1>Plan Your Next Adventure</h1>
+        <p>
+          Get in touch with our travel planners to customize your itinerary or
+          ask any questions.
+        </p>
+      </div>
+    </section>
+
+    <!-- Section 2: Contact Info Cards -->
+    <section class="info-cards">
+      <div class="container cards-grid">
+        <div class="info-box">
+          <h3>📍 Visit Our Office</h3>
+          <p>14 Lumley Beach Road</p>
+          <p>Freetown, Sierra Leone</p>
+        </div>
+        <div class="info-box">
+          <h3>📞 Call / WhatsApp</h3>
+          <p>+232 76 555 019</p>
+          <p>Mon – Sat: 8:00 AM – 6:00 PM</p>
+        </div>
+        <div class="info-box">
+          <h3>✉️ Email Support</h3>
+          <p>travel@lenosolfoods.com</p>
+          <p>24/7 Response Desk</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Section 3: Booking & Inquiry Form -->
+    <section class="form-section">
+      <div class="container form-wrapper">
+        <form class="inquiry-form" action="#" method="post">
+          <h2>Custom Itinerary Inquiry</h2>
+          <div class="form-row">
+            <div class="field">
+              <label for="name">Full Name</label>
+              <input
+                type="text"
+                id="name"
+                name="name"
+                placeholder="e.g. Amadu Kamara"
+                required
+              />
+            </div>
+            <div class="field">
+              <label for="email">Email Address</label>
+              <input
+                type="email"
+                id="email"
+                name="email"
+                placeholder="you@example.com"
+                required
+              />
+            </div>
+          </div>
+          <div class="form-row">
+            <div class="field">
+              <label for="tour-type">Preferred Tour</label>
+              <select id="tour-type" name="tour-type">
+                <option value="island">Banana Islands Boat & Snorkel</option>
+                <option value="rainforest">Tacugama Rainforest Hike</option>
+                <option value="food">Freetown Food & Spice Crawl</option>
+                <option value="custom">Fully Custom Itinerary</option>
+              </select>
+            </div>
+            <div class="field">
+              <label for="travel-date">Estimated Date</label>
+              <input type="date" id="travel-date" name="travel-date" required />
+            </div>
+          </div>
+          <div class="field full">
+            <label for="message">Trip Details & Special Requests</label>
+            <textarea
+              id="message"
+              name="message"
+              rows="4"
+              placeholder="Tell us about group size, dietary needs, or specific destinations..."
+            ></textarea>
+          </div>
+          <button type="submit" class="submit-btn">Send Inquiry</button>
+        </form>
+      </div>
+    </section>
+
+    <!-- Section 4: FAQs & Logistics -->
+    <section class="faq-section">
+      <div class="container">
+        <h2>Frequently Asked Questions</h2>
+        <div class="faq-list">
+          <div class="faq-item">
+            <h4>Do I need advance booking for day tours?</h4>
+            <p>
+              We recommend booking at least 48 hours in advance to guarantee
+              boat charters and guide availability.
+            </p>
+          </div>
+          <div class="faq-item">
+            <h4>Are airport pickups included?</h4>
+            <p>
+              All multi-day stay packages and private custom tours include
+              complimentary airport shuttle service.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="container">
+        <p>&copy; 2026 Lenosol Travel & Tours. Let's explore together.</p>
+      </div>
+    </footer>
+  </body>
+</html>
