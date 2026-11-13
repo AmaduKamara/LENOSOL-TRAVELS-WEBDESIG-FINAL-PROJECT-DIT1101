@@ -1,0 +1,167 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Segoe UI", sans-serif;
+  background-color: #f7f9f6;
+  color: #2d3748;
+  line-height: 1.6;
+}
+.container {
+  width: 90%;
+  max-width: 1120px;
+  margin: 0 auto;
+}
+
+/* Sticky Navbar */
+.navbar {
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  background-color: #1a365d;
+  padding: 18px 0;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.15);
+}
+.nav-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.logo {
+  font-size: 1.6rem;
+  font-weight: 700;
+  color: #ffffff;
+  text-decoration: none;
+}
+.logo span {
+  color: #319795;
+}
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 28px;
+}
+.nav-links a {
+  color: #e2e8f0;
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.3s;
+}
+.nav-links a:hover,
+.nav-links a.active {
+  color: #319795;
+}
+
+/* Section 1: Header */
+.stays-header {
+  background:
+    linear-gradient(rgba(26, 54, 93, 0.85), rgba(26, 54, 93, 0.85)),
+    url("https://images.unsplash.com/photo-1571896349842-33c89424de2d?auto=format&fit=crop&w=1600&q=80")
+      center/cover;
+  color: #ffffff;
+  text-align: center;
+  padding: 75px 20px;
+}
+.stays-header h1 {
+  font-size: 2.8rem;
+  margin-bottom: 12px;
+}
+.stays-header p {
+  color: #cbd5e0;
+  max-width: 600px;
+  margin: 0 auto;
+  font-size: 1.1rem;
+}
+
+/* Sections 2 & 3 */
+.stays-section {
+  padding: 75px 0;
+}
+.alt-bg {
+  background-color: #edf2f7;
+}
+.stays-section h2 {
+  font-size: 2rem;
+  color: #1a365d;
+  margin-bottom: 35px;
+  text-align: center;
+}
+.stays-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 30px;
+}
+.stay-card {
+  background: #ffffff;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.06);
+}
+.stay-card img {
+  width: 100%;
+  height: 220px;
+  object-fit: cover;
+}
+.stay-info {
+  padding: 22px;
+}
+.stay-info h3 {
+  font-size: 1.25rem;
+  color: #1a365d;
+  margin-bottom: 6px;
+}
+.rate {
+  display: block;
+  color: #319795;
+  font-weight: 700;
+  font-size: 1.05rem;
+  margin-bottom: 10px;
+}
+.stay-info p {
+  color: #4a5568;
+  font-size: 0.95rem;
+}
+
+/* Section 4: Amenities */
+.amenities-section {
+  background-color: #1a365d;
+  color: #ffffff;
+  padding: 60px 0;
+  text-align: center;
+}
+.amenities-section h2 {
+  margin-bottom: 30px;
+  font-size: 2rem;
+}
+.amenities-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 20px;
+  max-width: 900px;
+  margin: 0 auto;
+}
+.amenity-item {
+  background: rgba(255, 255, 255, 0.08);
+  padding: 18px;
+  border-radius: 8px;
+  font-weight: 600;
+  border: 1px solid rgba(255, 255, 255, 0.15);
+}
+
+/* Footer */
+.footer {
+  background-color: #1a202c;
+  color: #a0aec0;
+  text-align: center;
+  padding: 26px 0;
+  font-size: 0.9rem;
+}
+
+@media (max-width: 768px) {
+  .nav-container {
+    flex-direction: column;
+    gap: 12px;
+  }
+}
