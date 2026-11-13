@@ -1,0 +1,161 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Segoe UI", sans-serif;
+  background-color: #f7f9f6;
+  color: #2d3748;
+  line-height: 1.6;
+}
+.container {
+  width: 90%;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+/* Sticky Navbar */
+.navbar {
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  background-color: #1a365d;
+  padding: 18px 0;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.15);
+}
+.nav-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.logo {
+  font-size: 1.6rem;
+  font-weight: 700;
+  color: #ffffff;
+  text-decoration: none;
+}
+.logo span {
+  color: #319795;
+}
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 28px;
+}
+.nav-links a {
+  color: #e2e8f0;
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.3s;
+}
+.nav-links a:hover,
+.nav-links a.active {
+  color: #319795;
+}
+
+/* Section 1: Header */
+.tours-header {
+  background:
+    linear-gradient(rgba(26, 54, 93, 0.85), rgba(26, 54, 93, 0.85)),
+    url("https://images.unsplash.com/photo-1530789253388-582c481c54b0?auto=format&fit=crop&w=1600&q=80")
+      center/cover;
+  color: #ffffff;
+  text-align: center;
+  padding: 75px 20px;
+}
+.tours-header h1 {
+  font-size: 2.8rem;
+  margin-bottom: 12px;
+}
+.tours-header p {
+  color: #cbd5e0;
+  max-width: 600px;
+  margin: 0 auto;
+  font-size: 1.1rem;
+}
+
+/* Sections 2, 3, 4 */
+.tour-category {
+  padding: 70px 0;
+}
+.alt-bg {
+  background-color: #edf2f7;
+}
+.cat-title {
+  font-size: 1.8rem;
+  color: #1a365d;
+  margin-bottom: 30px;
+}
+.tour-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 28px;
+}
+.tour-card {
+  background: #ffffff;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+  position: relative;
+  border-top: 4px solid #319795;
+}
+.tour-badge {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  background: #e6fffa;
+  color: #234e52;
+  padding: 4px 12px;
+  border-radius: 12px;
+  font-size: 0.75rem;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+.tour-card h3 {
+  font-size: 1.25rem;
+  color: #1a365d;
+  margin-bottom: 8px;
+  padding-right: 70px;
+}
+.price {
+  color: #319795;
+  font-weight: 700;
+  font-size: 1.1rem;
+  margin-bottom: 12px;
+}
+.tour-card p {
+  color: #4a5568;
+  font-size: 0.95rem;
+  margin-bottom: 20px;
+}
+.tour-btn {
+  display: inline-block;
+  background: #1a365d;
+  color: #ffffff;
+  padding: 10px 22px;
+  border-radius: 6px;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 0.9rem;
+  transition: background 0.3s;
+}
+.tour-btn:hover {
+  background: #319795;
+}
+
+/* Footer */
+.footer {
+  background-color: #1a202c;
+  color: #a0aec0;
+  text-align: center;
+  padding: 26px 0;
+  font-size: 0.9rem;
+}
+
+@media (max-width: 768px) {
+  .nav-container {
+    flex-direction: column;
+    gap: 12px;
+  }
+}
